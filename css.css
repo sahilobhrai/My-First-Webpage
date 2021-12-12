@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin : 0;
+    padding: 0;
+    color:white;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background: #f2f2f2;
+}
+nav{
+    background: #1b1b1b;
+}
+nav:after{
+    content:'';
+    clear : both;
+    display: table;
+}
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 50px;
+    padding-left: 60px;
+    
+}
+.form-control-submit-button {
+    display: inline-block;
+    margin-left: -15px;
+    width: 150%;
+    height: 3.25rem;
+    border: 1px solid #f25c05;
+    border-radius: 70px;
+    background-color: #f25c05;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+    
+.form-control-submit-button:hover {
+    border: 1px solid #f25c05;
+    background-color: transparent;
+    color: #f25c05;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    
+}
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+nav ul li a:hover{
+    border-radius: 5px;
+    color: cyan;
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+}
+nav ul ul li a:hover{
+       color: cyan;
+       box-shadow: none;
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .4s;
+}
+nav ul ul ul{
+    border-top: none;
+
+}
+nav ul li:hover > ul{
+    top: 90px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+.img .centered{
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered{
+    color: white;
+    text-align: center;
+    opacity: 78%;
+    margin: auto;
+    padding: 30px;
+    font-size: 60px;
+    font-weight: 450;
+    background-color: black;
+    height: 35%;
+    width: 35%;
+}
+.button {
+    color: red;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.title{
+    text-align: center;
+    color:black;
+    box-sizing: border-box;
+    display:block;
+}
+.card-img-top{
+    height: 350px;
+    width: 880px; 
+   
+}
+
+.card-text{
+    text-align: center;
+    color:black;
+}
+
+.toptext{
+    font-size:33px;
+    font-weight: 550;
+    color: black;
+    margin-top: 19px;
+    margin-left: 500px;
+}
+
+.text2{
+    
+    font-size:33px;
+    font-weight: 550;
+    color: black;
+    margin-left: 800px;
+    margin-top: -270px;
+}
+
+.card {
+    display:grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 5px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin-left:30px;
+    margin-bottom: 35px;
+    margin-top: 30px;
+    margin-right: 1000px;
+}
+  
+.card-image {
+    grid-area: image;
+    background: url("watch.jpg");
+    background-size: cover;
+    width: 490px;
+    height: 500px;
+}  
+
+.card-image2 {
+    grid-area: image;
+    background: url("shirt.jpg");
+    background-size: cover;
+    width: 490px;
+    height: 500px;
+}  
+
+.card-image3 {
+    grid-area: image;
+    background: url("camera.jpg");
+    background-size: cover;
+    width: 490px;
+    height: 500px;
+}  
+
+.card-text h2 {
+    font-size:35px;
+    margin-top: -190px;
+    margin-left: -80px;
+}
+
+.card-text h3{
+    font-size:35px;
+    color: black;
+    margin-top: -190px;
+    margin-left: -80px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.links a{
+    color: #2617eb;
+    text-decoration: none;
+    font-size:17px;
+    font-weight: 270;
+    opacity: 0.8;;
+}
+
+.media-icons{
+    margin-top: 50px;
+    text-align: center;
+}
+  
+.media-icons a{
+    color:black;
+    font-size: 50px;
+    margin-right: 20px;
+}
